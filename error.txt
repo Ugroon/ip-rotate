@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/IPRotate.py", line 202, in enableGateway
+    self.startAPIGateway()
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/IPRotate.py", line 70, in startAPIGateway
+    self.awsclient = boto3.client('apigateway',
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/BappModules/boto3/__init__.py", line 91, in client
+    return _get_default_session().client(*args, **kwargs)
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/BappModules/boto3/session.py", line 258, in client
+    return self._session.create_client(
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/BappModules/botocore/session.py", line 835, in create_client
+    client = client_creator.create_client(
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/BappModules/botocore/client.py", line 80, in create_client
+    cls = self._create_client_class(service_name, service_model)
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/BappModules/botocore/client.py", line 102, in _create_client_class
+    class_attributes = self._create_methods(service_model)
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/BappModules/botocore/client.py", line 334, in _create_methods
+    op_dict[py_operation_name] = self._create_api_method(
+  File "/root/.BurpSuite/bapps/2eb2b1cb1cf34cc79cda36f0f9019874/BappModules/botocore/client.py", line 359, in _create_api_method
+    _api_call.__name__ = str(py_operation_name)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u0131' in position 7: ordinal not in range(128)
